@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-image: url('https://cdn.wallpaperhub.app/cloudcache/c/f/d/2/d/c/cfd2dc348303ed3180e4ef84f91931b74a843375.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .card {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
+        }
+
+        .card_image {
+            position: relative;
+        }
+
+        .card_image img {
+            width: 400px;
+        }
+
+        .card_details {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 10px;
+        }
+
+        .card_details label {
+            font-size: 35px;
+        }
+
+        .card_details p {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card_image">
+                <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/maroon-bells-autumn-mountain-reflective-landscape-1x1-square-format-gregory-ballos.jpg"
+                    alt='manali' />
+            </div>
+            <div class="card_details">
+                <label>Manali</label>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, doloremque. Quas, corporis
+                    voluptates id voluptate modi mollitia ipsum, eligendi ea repudiandae cumque suscipit pariatur.
+                    Voluptas corporis molestiae asperiores quidem debitis.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
